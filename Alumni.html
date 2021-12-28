@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Alumuni</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="Alumni.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/E cell.png" alt="" />
+            </a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="teams.html">Our Team</a></li>
+                    <li><a href="Alumni.html">Alumni</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+    </section>
+    <div class="Heading">
+        <h2>Our Alumnus</h2>
+    </div>
+    <div class="content">
+        <img src="images/damage.png" onclick="openfullimg(this.src)">
+        <p>We are soon coming with our Alumnus Page.If you are one of our alumuni please reach out to us <span> <a href="contact.html"><u>here</u></a></span>.
+        </p>
+    </div>
+    <div class="cr">
+        <span class="copyright">Copyright © VGSoM </span>
+        
+    </div>
+    <script>
+        var fullimgbox = document.getElementById("fullimgbox");
+        var fullimg = document.getElementById("fullimg");
+
+        function openfullimg(pic) {
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+        }
+
+        function closefullimg() {
+            fullimgbox.style.display = "None";
+        }
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+        var navLinks = document.getElementById("nav-links");
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

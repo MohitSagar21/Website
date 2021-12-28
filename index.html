@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>EPAC-BIT MESRA</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!----Header-->
+    <section class="header">
+      <nav>
+        <a href="index.html">
+          <img src="images/E cell.png" alt="" />
+        </a>
+        <div class="nav-links" id="nav-links">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teams.html">Our Team</a></li>
+            <li><a href="Alumni.html">Alumni</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>VGSoM IIT KGP</h1>
+        <p>Entrepreneurship Cell</p>
+        <!-- <a href="" class="hero-btn">Visit us to know more</a> -->
+      </div>
+    </section>
+
+    <!-----About---->
+    <section class="about">
+      <h1>About Us</h1>
+      <p>
+        Entrepreneurship Cell of Vinod Gupta School of Management is a student-run body that strives towards promoting the ethos of entrepreneurship. We act as a point of contact with various startups and students and help the batch in getting Winter Internships/Live Projects and LBOC Projects(Part of the academic curriculum). E-Cell not only provides academic opportunities but also organizes various annual events to ignite the entrepreneurial spark among the participants. 
+        <br><br>We conduct events like Srijan, Vichaar, Lovator Pitch, and Socha Hai where we make sure that participants have a lot of fun along with a great learning experience. E-Cell has also played a keen role in launching the Pink Cab Initiative at Kharagpur which helped in enabling local female cab drivers to provide commercial car services.
+      </p>
+    </section>
+
+    <!-----Events---->
+    <div class="ef">
+      <section class="events">
+        <h1>Our Events</h1>
+
+        <div class="Row">
+          <div class="elist">
+            <a href="https://dare2compete.com/competition/srijan-success-awaits-you-purvodaya-22-vinod-gupta-school-of-management-vgsom-indian-institute-of-technology-250132?rstatus=1"><img src="images/Srijan.png" alt="" /></a>
+          </div>
+          <div class="elist">
+            <a href="https://dare2compete.com/competition/vichaar-business-learning-redefined-purvodaya-22-vinod-gupta-school-of-management-vgsom-indian-institute-of--250042"><img src="images/Vichaar.png" alt="" /></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-----Message from Faculty---->
+    <section class="message">
+      <h1>Message from faculty advisor</h1>
+      <div class="content">
+        <img src="images/Untitled.png" class="hp1" />
+        <img src="images/Untitled.png" class="hp2" />
+
+        <p>
+          Blah Blah Blah
+          <br>Blah
+          <br>Blah
+          <br>Blah
+          <br>Blah
+          <br>Blah
+          <br>Blah
+          <br>Blah
+        </p>
+      </div>
+    </section>
+
+    <!-- basic-contact -->
+    <div class="ctab">
+      <section class="cta">
+        <h1>
+          Curious about what we do?
+        </h1>
+        <a href="contact.html" class="hero-btn">Contact Us</a>
+        <div class="social-links c">
+          <a href="https://www.facebook.com/ECell.VGSoM/">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a href="https://www.linkedin.com/in/ecellvgsom/">
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a href="https://www.instagram.com/ecell_vgsom_iitkgp/">
+            <span class="fa fa-instagram"></span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="cr">
+      <span class="copyright">Copyright © VGSoM IIT KGP </span>
+      
+    </div>
+
+    <script>
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+      var navLinks = document.getElementById("nav-links");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

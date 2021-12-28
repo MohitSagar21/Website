@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/VGSoM_Building.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.video{
+  margin-top: 10px;
+  width: 625px;
+  height: 344px;
+  border: none;
+}
+nav {
+  display: flex;
+  padding: 0.5% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 95px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #dfedf8;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #01937c;
+  display: block;
+  margin: auto;
+}
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  padding-top: 100px;
+  font-size: 52px;
+}
+
+.text-box p {
+  margin: 10px 0px 40px;
+  font-size: 40px;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #dfedf8;
+  padding: 12px 34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #01937c;
+  background: #01937c;
+  transition: 0.5s;
+}
+nav .fa {
+  display: none;
+}
+.about {
+  background: #dfedf8;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.about h1 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 600;
+}
+.about p {
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.75;
+}
+.events {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+
+  width: 80%;
+}
+.row {
+  margin: 5px 5px 0 59x;
+  display: flex;
+  justify-content: space-between;
+}
+.elist {
+  flex-basis: 32%;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.elist img {
+  width: 100%;
+  display: block;
+}
+.ef {
+  background: #dfedf8;
+}
+.events h1 {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+  text-align: center;
+  display: none;
+}
+.layer:hover {
+  background: #75ada5;
+}
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 16px;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 1;
+}
+
+.message {
+  background: #dfedf8;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.message h1 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 600;
+}
+.message p {
+  font-size: 20px;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.75;
+  padding-bottom: 100px;
+}
+.content {
+  padding: 0 150px 0 0; /* 75px being the width of the thumbnail + how much space you want to put between it and your text */
+  position: relative; /* So the thumbnail is relative to this */
+}
+
+.content img {
+  right: 0;
+  position: absolute;
+  top: 0;
+  
+}
+
+.ctab {
+  background: #dfedf8;
+}
+.cta {
+  margin: auto;
+  width: 70%;
+  height:40%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/VGSoM_Building.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.cta h1 {
+  color: #fff;
+  margin: 20px;
+  padding: 0;
+  font-size: 30px;
+}
+.content .hp2{
+  display: none;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    padding-top: 50px;
+    font-size: 30px;
+  }
+  .text-box p {
+    margin: 10px 0px 40px;
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .nav-links {
+    position: absolute;
+    background: #01937c;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  nav .fa {
+    display: block;
+    color: #dfedf8;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .message h1 {
+    font-size: 20px;
+  }
+  .about p {
+    font-size: 10px;
+  }
+  .about h1 {
+    font-size: 20px;
+  }
+  .message p {
+    font-size: 10px;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .events h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .content img {
+    float: right;
+    margin: 0 0 0 15px;
+  }
+  .content {
+    padding: 0; /* 75px being the width of the thumbnail + how much space you want to put between it and your text */
+    position: relative; /* So the thumbnail is relative to this */
+  }
+  .content img {
+    right: 0;
+    position: relative;
+    top: 0;
+  }
+  .cta h1 {
+    font-size: 20px;
+  }
+  .video{
+    margin-top: 8px;
+    width: 250px;
+    height: 200px;
+    
+  }
+}
+
+@media (max-width: 380px) {
+  .content img {
+    float:none;
+    display: block;
+    margin: 0 0 0 0;
+  }
+  .content .hp1{
+    display: none;
+  }
+  .content .hp2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+}
+.social-links {
+  padding-top: 15px;
+}
+.social-links a {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-color: #ffffff;
+  color: #281f7a;
+  border-radius: 50%;
+  margin: 0 2px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+.social-links a:hover {
+  box-shadow: 0 0 10px #000;
+}
+.c a:hover {
+  box-shadow: 0 0 10px #fff;
+}
+.cr {
+  padding-top: 30px;
+  background: #dfedf8;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.copyright {
+  padding-bottom: 40px;
+}
