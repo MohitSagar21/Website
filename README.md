@@ -1,4 +1,4 @@
-# Epac-Website
+# E-Cell-Website
 
 ## Editing Index(Home) Page of the Website
 
